@@ -24,6 +24,11 @@
     --font-size-xl: 3rem;
 }
 
+@font-face {
+    font-family: "sans";
+    src: url(font/sans.ttf);
+}
+
 .dark {
     --bg-main: #2a2a38;
     --bg-body: #1a1a2e;
@@ -45,6 +50,7 @@ body {
     background-color: var(--bg-body);
     overflow-x: hidden;
     user-select: none;
+    zoom: 0.8;
 }
 
 input {
@@ -119,6 +125,7 @@ nav {
     padding-top: var(--nav-size);
     display: grid;
     place-items: center;
+    zoom: 0.75;
 }
 
 .screen {
@@ -378,6 +385,20 @@ nav {
 
 .zoom-in {
     animation: zoom-in 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.footer {
+    font-family: "sans";
+    font-weight: 500;
+    color: black;
+    font-size: 1rem;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    position: fixed;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 14px;
 }
 
 @keyframes zoom-in {
