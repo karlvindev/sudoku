@@ -24,6 +24,11 @@
     --font-size-xl: 3rem;
 }
 
+@font-face {
+    font-family: "sans";
+    src: url(font/sans.ttf);
+}
+
 .dark {
     --bg-main: #2a2a38;
     --bg-body: #1a1a2e;
@@ -406,6 +411,19 @@ nav {
     100% {
         transform: scale(1);
     }
+}
+
+.footer {
+    font-family: "sans";
+    src: url(font/sans.ttf);
+    font-weight: bold;
+    color: black;
+    font-size: 1rem;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    position: fixed;
+    text-align: center;
 }
 
 @media only screen and (max-width: 800px) {
